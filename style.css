@@ -1,0 +1,67 @@
+
+:root {
+  --primary: #a8a8a8;
+  --secondary: #101010;
+  --border: lightgray;
+  --shadow: 0 0 16px gray;
+  --btn-f:
+}
+
+* {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.container {
+  border: solid black 1px;
+  height: 100vh;
+}
+
+h1 {
+  border: var(--border) solid 1px;
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 25vh 0 0 0;
+  padding: 10% 0;
+  box-shadow: var(--shadow)
+}
+
+
+.choose {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.choose div{
+  margin-top: 1.2rem;
+  font-size: 2rem;
+}
+
+.choose div a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.choose div:first-child a {
+  background-color: rgba(180,0,0,0.4);
+  border: red solid 1px;
+  border-radius: 15px 0 0 15px;
+}
+
+.choose div:last-child a {
+  background-color: rgba(0,180,0,0.7);
+  border: green solid 1px;
+  border-radius: 0 15px 15px 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
